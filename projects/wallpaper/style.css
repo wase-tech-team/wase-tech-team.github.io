@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'NewIndustry';   /*字体名称*/
+    src: url('NewIndustry-Regular.otf');       /*字体源文件*/
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.mt-number-animate{
+    font-family: 'NewIndustry';
+    line-height: 100px;
+    height: 100px;/*设置数字显示高度*/
+    font-size: 60px;/*设置数字大小*/
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.mt-number-animate .mt-number-animate-dot{ 
+    width: 14px;/*设置分割符宽度*/
+    line-height: 100px;
+    float: left;
+    text-align: center;}
+.mt-number-animate .mt-number-animate-dom{
+    width: 50px;/*设置单个数字宽度*/
+    text-align: center;
+    float: left;
+    position: relative;
+    top: 0;
+}
+.mt-number-animate .mt-number-animate-dom .mt-number-animate-span{
+    width: 100%;
+    float: left;
+}
+#images {
+    background-color: rgb(193, 0, 98);
+}
+
+#mask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.90);
+}
+.img-box {
+    position: relative;
+}
+.img {
+    background-color: white;
+    backface-visibility: hidden;
+    transition: transform 1000ms;
+    transition-timing-function: cubic-bezier(.76,.31,.34,.84);
+    filter: grayscale(70%);
+}
+.img-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(234, 0, 162);
+    backface-visibility: hidden;
+    transition: transform 1000ms;
+    transition-timing-function: cubic-bezier(.76,.31,.34,.84);
+}
+.front {
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(-180deg);
+}
+.fans-count {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 464px;
+    height: 100px;
+}
+
+.icon-box {
+    float: left;
+    width: 80px;
+    height: 100px;
+    background-color: rgb(255, 0, 102);
+    text-align: center;
+    border-radius: 6px;
+}
+
+.icon-box img {
+    width: 36px;
+    margin-top: 34px;
+}
+
+.number-box {
+    float: left;
+    margin-left: 20px;
+    padding-left: 24px;
+    width: 340px;
+    height: 100px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 6px;
+}
