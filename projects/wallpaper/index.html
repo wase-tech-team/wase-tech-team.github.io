@@ -6,15 +6,20 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <!-- <script type="text/javascript" src="jquery-3.5.1.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="prefixfree.min.js"></script> -->
     <script>window.$ = window.jQuery = require('./jquery-3.5.1.js');</script>
     <script>window.waterfall = require('./waterfall.js');</script>
     <script type="text/javascript" src="numberAnimate.js"></script>
+    <!-- <script type="text/javascript" src="dat.gui.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="shake.little.css">
+    <link rel="stylesheet" type="text/css" href="animate.min.css">
+    <link rel="stylesheet" type="text/css" href="fireworks.css">
 </head>
 <body style="background: white;">
     <div id="images"></div>
     <div id="mask">
-        <div class="fans-count">
+        <div id="fans-count" class="fans-count shake-constant">
             <div class="icon-box">
                 <img src="icon.png">
             </div>
@@ -22,7 +27,9 @@
                 <div id="numbers"></div>
             </div>
         </div>
+        <div id="canvas-container"></div>
     </div>
+    <script type="text/javascript" src="fireworks.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

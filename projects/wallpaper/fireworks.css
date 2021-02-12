@@ -1,0 +1,28 @@
+#canvas-container {
+	background: rgba(0, 0, 0, 0);
+  height: 300px;
+	left: 50%;
+	margin: -250px 0 0 -300px;
+	position: absolute;
+	top: 50%;
+  width: 600px;
+	z-index: 1;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+canvas:active {
+	cursor: crosshair;
+}
+
+#gui {
+	right: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}

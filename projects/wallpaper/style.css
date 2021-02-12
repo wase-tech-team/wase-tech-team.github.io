@@ -51,6 +51,7 @@ html, body {
 }
 .img-box {
     position: relative;
+    /* visibility: hidden; */
 }
 .img {
     background-color: white;
@@ -80,6 +81,7 @@ html, body {
     margin-top: 20%;
     width: 464px;
     height: 100px;
+    z-index: 4;
 }
 
 .icon-box {
